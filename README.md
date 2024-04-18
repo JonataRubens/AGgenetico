@@ -29,3 +29,39 @@ Este script implementa um algoritmo genético para resolver o Problema do Caixei
    - Os resultados da aptidão dos cromossomos antes e depois do crossover, mutação e avaliação do algoritmo genético são exibidos para fins de análise e comparação.
 
 Esse código demonstra como implementar um algoritmo genético para resolver o Problema do Caixeiro Viajante, uma tarefa comum em otimização combinatória.
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+script 2
+
+
+
+Este script implementa um algoritmo genético para otimização de uma função univariada \( f(x) = x^2 - 3x + 4 \), onde \( x \) está no intervalo \([0, 10]\). 
+
+1. **Importação do Módulo Random**:
+   - O módulo `random` é importado para geração de números aleatórios.
+
+2. **Função de Fitness**:
+   - A função `calcular_fitness(x)` recebe um valor \( x \) decodificado a partir de uma representação binária e retorna o valor da função de fitness \( f(x) = x^2 - 3x + 4 \).
+
+3. **Decodificação do Indivíduo**:
+   - A função `decodificar(x_binario)` decodifica um vetor binário representando um indivíduo para o intervalo \([0, 10]\) usando conversão binária para decimal.
+
+4. **Mutação**:
+   - A função `mutacao(individuo)` aplica uma mutação em um indivíduo, selecionando aleatoriamente um bit e realizando uma inversão (bit flip).
+
+5. **População Inicial**:
+   - A população inicial é composta por 4 indivíduos, onde cada indivíduo é representado por um vetor binário de comprimento 4.
+
+6. **Execução do Algoritmo Genético**:
+   - O algoritmo é executado por 3 gerações.
+   - Para cada geração:
+     - Calcula-se a função de fitness para cada indivíduo na população.
+     - Realiza-se a seleção por torneio simples para escolher os pais.
+     - Aplica-se uma mutação em um dos filhos gerados.
+     - Realiza-se a reinserção com elitismo, mantendo o melhor indivíduo da geração anterior.
+     - Exibe-se a população atual e o melhor indivíduo da geração.
+
+O código demonstra a implementação de um algoritmo genético básico para otimização de uma função univariada, utilizando codificação binária para representar os indivíduos e seleção por torneio para escolha dos pais.
+
