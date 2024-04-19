@@ -34,10 +34,10 @@ Esse código demonstra como implementar um algoritmo genético para resolver o P
 
 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 script 2
 
-
+**AG
 
 Este script implementa um algoritmo genético para otimização de uma função univariada \( f(x) = x^2 - 3x + 4 \), onde \( x \) está no intervalo \([0, 10]\). 
 
