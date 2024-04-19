@@ -1,3 +1,5 @@
+**AL
+
 Este script implementa um algoritmo genético para resolver o Problema do Caixeiro Viajante (PCV) para um conjunto fixo de cidades e distâncias entre elas.
 
 1. **Definição das cidades e distâncias**:
