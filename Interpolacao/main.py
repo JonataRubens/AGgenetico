@@ -1,7 +1,6 @@
 import numpy as np
 from PIL import Image
 
-
 class Reducao():
     def vizinho_mais_proximo(self, imagem):
         # Pegando altura atual
@@ -108,13 +107,13 @@ resultado_imagem = Image.fromarray(resultado_interpolacao)
 
 resultado = reducao.vizinho_mais_proximo(matrix_imagem)
 resultado_imagem = Image.fromarray(resultado)
-resultado_imagem.save('resultado_reducao_vizinhos.jpg')
+resultado_imagem.save('imagem_reduzida_vizinho.jpg')
 
 # Para redução por vizinhos mais proximo.
 
 resultado = reducao.bilinear(matrix_imagem)
 resultado_imagem = Image.fromarray(resultado)
-resultado_imagem.save('resultado_reducao_bilinear.jpg')
+resultado_imagem.save('imagem_reduzida_bilinear.jpg')
 
 # Para ampliação por vizinhos mais proximo.
 
@@ -125,4 +124,4 @@ resultado_imagem.save('resultado_ampliacao_vizinhos.jpg')
 # # Para ampliaçao por bilinear
 resultado = ampliar.bilinear(matrix_imagem)
 resultado_imagem = Image.fromarray(resultado)
-resultado_imagem.save('resultado_ampliacao_bilinear.jpg')
+resultado_imagem.save('imagem_ampliada_bilinear.jpg')
